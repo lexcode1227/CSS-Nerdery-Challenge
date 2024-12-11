@@ -63,11 +63,11 @@ const GraficSection = () => {
         </div>
         <div className='container-upgrade'>
             <div className='box-gradient'></div>
-            <div>
+            <div className='box-information'>
                 <h4>Buy more space now!</h4>
                 <p>Upgrade to cloud premium</p>
             </div>
-            <button>Upgrade Account</button>
+            <button className='btn'>Upgrade Account</button>
         </div>
     </section>
   )

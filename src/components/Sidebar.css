@@ -5,27 +5,31 @@
     background-color: #343951;
     display: grid;
     grid-template-columns: 1fr;
+    grid-template-rows: repeat(5, 1fr);
     grid-area: Sidebar;
 }
 
 .logoContainer {
     display: flex;
     justify-content: left;
-    padding-top: 8px;
-    width: 100%;
+    max-height: 108px;
 }
 
 .logo {
     background: linear-gradient(to left, #689EF8, #FF6860, #FF9F00);
     width: 74px;
     height: 21px;
+    margin: 36px 66px 0px 32px;
+    border-radius: 5px;
+    border: none;
 }
 
 .menuItems {
     width: 100%;
     max-width: 173px;
-    height: 350px;
+    height: 299px;
     padding: 0;
+    margin: 0;
     text-align: left;
     text-decoration: none;
     list-style: none;
@@ -33,12 +37,17 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    padding-bottom: 14px;
+    border-bottom: 1px solid #464C61;
 }
 
 .menuItems li {
     display: flex;
     align-items: center;
-    gap: 8px;
+    gap: 19px;
+    height: 44px;
+    padding-left: 32px;
+    font-size: 10px;
 }
 
 svg {
@@ -48,9 +57,11 @@ svg {
 }
 
 .btnContainer {
-    display: flex;
+    display: grid;
+    grid-row: 5 / 5;
     justify-content: center;
-    align-items: center;
+    align-items: flex-end;
+    padding-bottom: 27px;
 }
 
 .btn {
@@ -60,11 +71,20 @@ svg {
     border-radius: 8px;
     font-size: 10px;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+    border: none;
+    padding-left: 20px;
 }
 
 .btn span {
-    padding: 2.5px;
+    padding: 5px 7px;
     border-radius: 8px;
     background-color: #FFB233;
+}
+
+.btn span svg {
+    width: 7px;
+    height: 7px;
 }
