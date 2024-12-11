@@ -1,0 +1,41 @@
+.mainSection {
+    width: 100%;
+    max-width: 562px;
+    height: 100%;
+    grid-area: MainSection;
+    background-color: #F5F6FC;
+}
+
+.container {
+    display: grid;
+    width: 100%;
+}
+
+.box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.container div div svg {
+    color: black;
+}
+
+.box-icons {
+    display: flex;
+    gap: 8px;
+    justify-content: right;
+}
+
+.card {
+    border: 1px solid black;
+    border-radius: 12px;
+    width: 159px;
+    height: 133px;
+    padding: 0;
+}
+
+.card-small {
+    width: 157px;
+    height: 79px;
+}
