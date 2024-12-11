@@ -1,22 +1,29 @@
 #root {
-  /* max-width: 1280px; */
   width: 100%;
-  max-width: 1027px;
   margin: 0;
   padding: 0;
   text-align: center;
   height: 100vh;
+  font-size: 10px;
 }
 
-.card {
-  padding: 2em;
+ul {
+  list-style: none;
 }
-
 main {
   display: grid;
   grid-template-areas: 
-    "Sidebar Sidebar MainSection MainSection MainSection GraficSection GraficSection"
-    "Sidebar Sidebar MainSection MainSection MainSection GraficSection GraficSection"
-    "Sidebar Sidebar MainSection MainSection MainSection GraficSection GraficSection";
+    "Sidebar MainSection MainSection GraficSection"
+    "Sidebar MainSection MainSection GraficSection"
+    "Sidebar MainSection MainSection GraficSection";
   gap: 20.5px;
+}
+
+@media (max-width: 500px) {
+  main {
+    grid-template-areas:
+        "Sidebar"
+        "MainSection"
+        "GraficSection";
+  }
 }

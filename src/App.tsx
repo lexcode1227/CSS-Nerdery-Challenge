@@ -1,19 +1,14 @@
-// import { useState } from 'react'
-// import reactLogo from './assets/react.svg'
-// import viteLogo from '/vite.svg'
 import './App.css'
-import GraficSection from './components/GraficSection'
+import RightSidebar from './components/RightSidebar'
 import MainSection from './components/MainSection'
-import Sidebar from './components/Sidebar'
+import LeftSidebar from './components/LeftSidebar'
 
 function App() {
-  // const [count, setCount] = useState(0)
-
   return (
     <main>
-      <Sidebar/>
+      <LeftSidebar/>
       <MainSection/>
-      <GraficSection/>
+      <RightSidebar/>
     </main>
   )
 }

@@ -1,41 +1,251 @@
 .mainSection {
     width: 100%;
-    max-width: 562px;
-    height: 100%;
+    min-width: 562px;
+    height: 100vh;
+    padding: 0 18px 0 16px;
     grid-area: MainSection;
     background-color: #F5F6FC;
 }
 
-.container {
+.searchContainer {
+    padding-top: 25px;
+    display: flex;
+    width: 100%;
+    min-width: 527px;
+    position: relative;
+}
+
+.searchContainer-icon {
+    position: absolute;
+    top: 24px;
+    bottom: 0;
+    inset-inline-start: 0px;
+    display: flex;
+    align-items: center;
+    padding-inline-start: 12px;
+    pointer-events: none;
+}
+
+#searchInput {
+    background-color: white;
+    color: #343951;
+    border: none;
+    border-radius: 5px;
+    width: 100%;
+    height: 29px;
+    display: block;
+    padding-inline-start: 40px;
+}
+
+.cardContainer {
     display: grid;
     width: 100%;
 }
+.recentlyUsedContainer {
+    padding-top: 25px;
+    display: flex;
+    flex-direction: column;
+    gap: 23px;
+}
 
-.box {
+.recentFilesContainer {
+    padding-top: 33px;
+    gap: 8px;
+}
+
+.shareContainer {
+    padding-top: 33px;
+    gap: 16px;
+}
+
+.cardsContainer > div:nth-child(2) {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.cardBox-title {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-.container div div svg {
-    color: black;
+.cardBoxContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
 }
 
-.box-icons {
+.title-h3 {
+    font-size: 20px;
+}
+
+.cardBox > p {
+    font-size: 12px;
+}
+.container div div svg {
+    color: #343951;
+}
+
+.boxIcons {
     display: flex;
     gap: 8px;
     justify-content: right;
 }
+.boxIcons > svg {
+    color: #343951;
+}
 
 .card {
-    border: 1px solid black;
     border-radius: 12px;
     width: 159px;
     height: 133px;
-    padding: 0;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 29px;
+    padding: 16px 14px;
+}
+
+.cardIcons {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.card-title {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+    font-size: 12px;
+    color: #343951;
+}
+
+.card-title h4 {
+    font-size: 8px;
+    color: #858A9D;
+    font-weight: 400;
 }
 
 .card-small {
     width: 157px;
-    height: 79px;
+    height: 100px;
+    gap: 6px;
+    padding-right: 36px;
+}
+
+.card-small:nth-child(2) {
+    padding-right: 24px;
+}
+
+.card-small > .cardIcons {
+    gap: 2px;
+}
+
+.card-small > .card-title {
+    gap: 2px;
+}
+
+.tableContainer {
+    height: 235px;
+    text-align: justify;
+    border-collapse: separate;
+    border-spacing: 0 15px;
+}
+
+.tableContainer > thead {
+    color: #858A9D;
+}
+
+.tableContainer > tbody {
+    color: #343951;
+}
+
+.tableContainer > tbody > tr {
+    background-color: white;
+}
+
+.tableContainer > tbody th:last-child {
+    border-start-end-radius: 8px;
+    border-end-end-radius: 8px;
+    vertical-align: middle;
+}
+
+.tableContainer > tbody th:first-child {
+    border-start-start-radius: 8px;
+    border-end-start-radius: 8px;
+    padding-left: 8px;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    height: 100%;
+}
+
+.card-recentFile-square {
+    width: 21px;
+    height: 21px;
+    border-radius: 8px;
+}
+
+.tableContainer > tbody tr:first-child > th > div {
+    background-color: #FF9F00;
+}
+
+.tableContainer > tbody tr:nth-child(2) > th > div {
+    background-color: #4AC29D;
+}
+
+.tableContainer > tbody tr:nth-child(3) > th > div {
+    background-color: #FF6860;
+}
+
+.tableContainer > tbody tr:last-child > th > div {
+    background-color: #FF9F00;
+}
+
+.cardIcons > .cardIcons-square {
+    width: 30px;
+    height: 26px;
+    border-radius: 0;
+    background-color: #FF9F00;
+}
+.shadow {
+    -webkit-box-shadow: -100px 100px 0px 0px rgba(255, 217, 153, 1);
+    -moz-box-shadow: -100px 100px 0px 0px rgba(255, 217, 153, 1);
+    box-shadow: -5px 5px 0px 0px rgba(255, 217, 153, 1);
+}
+
+.cardIcons-circles > svg {
+    width: 16px;
+    height: 16px;
+    padding: 1px;
+}
+
+@media (max-width: 500px) {
+    .mainSection{
+        min-width: 100%;
+        height: auto;
+    }
+    .searchContainer{
+        min-width: 100%;
+    }
+    .cardBoxContainer{
+        flex-direction: column;
+        gap: 20px;
+    }
+    .card {
+       width: 200px;
+       height: 145px;
+    }
+    .card-small {
+       width: 157px;
+       height: 100px;
+    }
+    .shareContainer{
+        padding-bottom: 20px;
+    }
 }

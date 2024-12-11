@@ -1,0 +1,201 @@
+.rightSidebar {
+    width: 100%;
+    min-width: 252px;
+    height: 100%;
+    padding: 16px 24px;
+    grid-area: GraficSection;
+    background-color: #F5F6FC;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.containerTop-User {
+    width: 100%;
+    height: 79px;
+    padding-top: 26px;
+    border-bottom: 1px solid #E0E7F1;
+}
+
+.containerTop-User > div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.boxIcons {
+    display: flex;
+    gap: 8px;
+}
+
+.boxUser {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 12px;
+}
+
+.boxUser > svg {
+    color: #343951;
+}
+
+.stadisticsContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+    width: 100%;
+    margin-top: 17px;
+}
+
+.stadisticsContainer > h3 {
+    width: 100%;
+    text-align: left;
+    font-size: 20px;
+}
+
+.stadisticSubContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.stadisticSubContainer > p {
+    color: #858A9D;
+    font-size: 8px;
+}
+
+.chart {
+    width: 139px;
+    height: 139px;
+    position: relative;
+}
+.chart--info {
+    position: absolute;
+    top: 38px;
+    left: 52px;
+}
+.chart--info > h3 {
+    font-size: 24px;
+    color: #343951;
+    text-align: left;
+}
+.chart--info > p {
+    font-size: 14px;
+    color: #858A9D;
+    text-align: left;
+}
+
+.chart > svg {
+    width: 139px;
+    height: 139px;
+}
+
+.stadisticBox {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.stadisticCard {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* width: 195px; */
+    width: 100%;
+    height: 46px;
+    border-bottom: 1px solid #E0E7F1;
+}
+
+.stadisticCard:last-child {
+    border-bottom: none;
+}
+
+.stadisticCard-square {
+    width: 28px;
+    height: 28px;
+    border-radius: 8px;
+}
+
+.stadisticCard:first-child > .stadisticCard-square {
+    background-color: #FF9F00;
+}
+
+.stadisticCard:nth-child(2) > .stadisticCard-square {
+    background-color: #689FF8;
+}
+
+.stadisticCard:nth-child(3) > .stadisticCard-square {
+    background-color: #4AC29D;
+}
+
+.stadisticCard:last-child > .stadisticCard-square {
+    background-color: #BCBECA;
+}
+
+.stadisticCard-container {
+    padding: 10px 7px;
+}
+
+.stadisticCard-container h4 {
+    font-size: 10px;
+    font-weight: 400;
+}
+
+.stadisticCard-container p {
+    font-size: 8px;
+}
+
+.stadisticCard > p {
+    font-size: 8px;
+    font-weight: 500;
+    padding: 4.5px 14px;
+    margin-left: 47px;
+    border-radius: 4px;
+    background-color: white;
+}
+
+.containerUpgrade {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    border-radius: 18px;
+    padding: 17px 37px 16px 38px;
+    margin-top: 27px;
+    width: 100%;
+    max-width: 194px;
+    height: 210px;
+}
+
+.containerUpgrade > .btn {
+    font-weight: 600;
+}
+
+.gradientBox {
+    background: linear-gradient(to left, #689EF8, #FF6860, #FF9F00);
+    width: 119px;
+    height: 73px;
+    border-radius: 11px;
+}
+.informationBox {
+    margin: 23px 0 11px 0;
+}
+
+.informationBox h4 {
+    font-size: 12px;
+    margin-bottom: 5px;
+}
+
+.informationBox p {
+    font-size: 8px;
+}
+@media (max-width: 500px) {
+    .containerTop-User{
+        height: auto;
+    }
+    .containerTop-User > div {
+        display: none;
+    }
+}
