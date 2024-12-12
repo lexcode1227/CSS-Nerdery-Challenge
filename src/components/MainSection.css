@@ -54,6 +54,7 @@
 
 .recentFilesContainer {
     padding-top: 38px;
+    gap: 8px;
 }
 
 .shareContainer {
@@ -140,4 +141,41 @@
 
 .tableContainer {
     height: 235px;
+    text-align: justify;
+    /* border-spacing: inherit; */
+    border-collapse: separate;
+    border-spacing: 0 15px;
+}
+
+.tableContainer > thead {
+    color: #858A9D;
+}
+
+.tableContainer > tbody {
+    color: #343951;
+}
+
+.tableContainer > tbody > tr {
+    background-color: white;
+}
+
+.tableContainer > tbody th:last-child {
+    border-start-end-radius: 8px;
+    border-end-end-radius: 8px;
+    vertical-align: middle;
+}
+
+.tableContainer > tbody th:first-child {
+    border-start-start-radius: 8px;
+    border-end-start-radius: 8px;
+    padding-left: 8px;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    height: 100%;
+}
+
+.tableContainer > tbody th:last-child {
+    border-start-end-radius: 8px;
+    border-end-end-radius: 8px;
 }
