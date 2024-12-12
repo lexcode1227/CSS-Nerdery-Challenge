@@ -2,6 +2,8 @@
     width: 100%;
     max-width: 562px;
     height: 100%;
+    padding-left: 16px;
+    padding-right: 18px;
     grid-area: MainSection;
     background-color: #F5F6FC;
 }
@@ -39,17 +41,46 @@
     color: black;
 }
 
-.container {
+.cardContainer {
     display: grid;
     width: 100%;
 }
+.recentlyUsedContainer {
+    padding-top: 25px;
+    display: flex;
+    flex-direction: column;
+    gap: 23px;
+}
 
-.box {
+.recentFilesContainer {
+    padding-top: 38px;
+}
+
+.shareContainer {
+    padding-top: 38px;
+    gap: 16px;
+}
+
+.cardsContainer > div:nth-child(2) {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.cardBox {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
+.title-h3 {
+    font-size: 20px;
+}
+
+.cardBox > p {
+    font-size: 12px;
+}
 .container div div svg {
     color: black;
 }
@@ -58,6 +89,9 @@
     display: flex;
     gap: 8px;
     justify-content: right;
+}
+.box-icons > svg {
+    color: black;
 }
 
 .card {
@@ -71,4 +105,8 @@
 .card-small {
     width: 157px;
     height: 79px;
+}
+
+.tableContainer {
+    height: 235px;
 }

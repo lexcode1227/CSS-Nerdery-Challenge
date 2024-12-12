@@ -14,15 +14,15 @@ const MainSection = () => {
             </div>
             <input type="search" name="searchInput" id="searchInput" placeholder='Search'  /> 
         </div>
-        <div className='container'>
-            <div className='box'>
-                <h3>Recently Used</h3>
+        <div className='recentlyUsedContainer cardContainer'>
+            <div className='cardBox'>
+                <h3 className='title-h3'>Recently Used</h3>
                 <div className='box-icons'>
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor">
-                        <path stroke-linecap="round" stroke-linejoin="round" d="m2.25 12 8.954-8.955c.44-.439 1.152-.439 1.591 0L21.75 12M4.5 9.75v10.125c0 .621.504 1.125 1.125 1.125H9.75v-4.875c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21h4.125c.621 0 1.125-.504 1.125-1.125V9.75M8.25 21h8.25" />
+                    <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m15 19-7-7 7-7"/>
                     </svg>
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor">
-                        <path stroke-linecap="round" stroke-linejoin="round" d="m2.25 12 8.954-8.955c.44-.439 1.152-.439 1.591 0L21.75 12M4.5 9.75v10.125c0 .621.504 1.125 1.125 1.125H9.75v-4.875c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21h4.125c.621 0 1.125-.504 1.125-1.125V9.75M8.25 21h8.25" />
+                    <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m9 5 7 7-7 7"/>
                     </svg>
                 </div>
             </div>
@@ -38,12 +38,12 @@ const MainSection = () => {
                 </article>
             </div>
         </div>
-        <div className='container'>
-            <div className='box'>
-                <h3>Recent Files</h3>
-                <h4>View All</h4>
+        <div className='recentFilesContainer cardContainer'>
+            <div className='cardBox'>
+                <h3 className='title-h3'>Recent Files</h3>
+                <p>View All</p>
             </div>
-            <table>
+            <table className='tableContainer'>
                 <thead>
                     <tr>
                         <th>Name</th>
@@ -80,12 +80,12 @@ const MainSection = () => {
                 </tbody>
             </table>
         </div>
-        <div className='container'>
-            <div className='box'>
-                <h3>Share with me</h3>
-                <h4>View All</h4>
+        <div className='shareContainer cardContainer'>
+            <div className='cardBox'>
+                <h3 className='title-h3'>Share with me</h3>
+                <p>View All</p>
             </div>
-            <div>
+            <div className='cardBox'>
                 <article className='card card-small'>
                     
                 </article>
