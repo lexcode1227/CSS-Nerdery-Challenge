@@ -137,6 +137,20 @@
 .card-small {
     width: 157px;
     height: 79px;
+    gap: 6px;
+    padding-right: 36px;
+}
+
+.card-small:nth-child(2) {
+    padding-right: 24px;
+}
+
+.card-small > .card-icons {
+    gap: 2px;
+}
+
+.card-small > .card-title {
+    gap: 2px;
 }
 
 .tableContainer {
