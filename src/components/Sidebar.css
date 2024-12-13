@@ -1,6 +1,6 @@
 .leftSide {
     width: 100%;
-    max-width: 172px;
+    min-width: 172px;
     height: 100vh;
     background-color: #343951;
     display: grid;
@@ -22,6 +22,10 @@
     margin: 36px 66px 0px 32px;
     border-radius: 5px;
     border: none;
+}
+
+.menuIcon {
+    display: none;
 }
 
 .menuItems {
@@ -82,9 +86,9 @@ svg {
 .btnContainer {
     display: grid;
     grid-row: 5 / 5;
-    justify-content: center;
+    justify-content: left;
     align-items: flex-end;
-    padding-bottom: 27px;
+    padding: 0 0 27px 27px;
 }
 
 .btn {
@@ -186,4 +190,31 @@ svg {
     left: 50%;
     transform: translate(-50%, -50%) rotate(45deg);
     background-color: #464C61;
+}
+
+@media (max-width: 500px) {
+    .leftSide {
+        height: auto;
+        grid-template-rows: 1fr;
+        max-width: 100%;
+    }
+    .logoContainer {
+        justify-content: space-between;
+        align-items: center;
+        padding: 36px 16px;
+    }
+    .menuIcon {
+        display: block;
+        width: 48px;
+        height: 48px;
+    }
+    .logo {
+        margin: 0;
+    }
+    .menuItems{
+        display: none;
+    }
+    .btnContainer{
+        display: none;
+    }
 }

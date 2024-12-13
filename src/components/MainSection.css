@@ -1,9 +1,8 @@
 .mainSection {
     width: 100%;
-    max-width: 562px;
-    height: 100%;
-    padding-left: 16px;
-    padding-right: 18px;
+    min-width: 562px;
+    height: 100vh;
+    padding: 0 18px 0 16px;
     grid-area: MainSection;
     background-color: #F5F6FC;
 }
@@ -154,7 +153,6 @@
 .tableContainer {
     height: 235px;
     text-align: justify;
-    /* border-spacing: inherit; */
     border-collapse: separate;
     border-spacing: 0 15px;
 }
@@ -225,4 +223,26 @@
     width: 16px;
     height: 16px;
     padding: 1px;
+}
+
+@media (max-width: 500px) {
+    .mainSection{
+        min-width: 100%;
+        height: auto;
+    }
+    .cardBox-container{
+        flex-direction: column;
+        gap: 20px;
+    }
+    .card {
+       width: 200px;
+       height: 145px;
+    }
+    .card-small {
+       width: 157px;
+       height: 80px;
+    }
+    .shareContainer{
+        padding-bottom: 20px;
+    }
 }

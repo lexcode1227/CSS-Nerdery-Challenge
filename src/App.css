@@ -1,7 +1,5 @@
 #root {
-  /* max-width: 1280px; */
   width: 100%;
-  /* max-width: 1027px; */
   margin: 0;
   padding: 0;
   text-align: center;
@@ -19,4 +17,13 @@ main {
     "Sidebar MainSection MainSection GraficSection"
     "Sidebar MainSection MainSection GraficSection";
   gap: 20.5px;
+}
+
+@media (max-width: 500px) {
+  main {
+    grid-template-areas:
+        "Sidebar"
+        "MainSection"
+        "GraficSection";
+  }
 }

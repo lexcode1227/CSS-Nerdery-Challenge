@@ -1,6 +1,6 @@
 .graficSection {
     width: 100%;
-    max-width: 252px;
+    min-width: 252px;
     height: 100%;
     padding: 16px 24px;
     grid-area: GraficSection;
