@@ -70,7 +70,27 @@
 .stadistic-grafic {
     width: 139px;
     height: 139px;
-    border: 1px solid #343951;
+    position: relative;
+}
+.stadistic-grafic--info {
+    position: absolute;
+    top: 38px;
+    left: 52px;
+}
+.stadistic-grafic--info > h3 {
+    font-size: 24px;
+    color: #343951;
+    text-align: left;
+}
+.stadistic-grafic--info > p {
+    font-size: 14px;
+    color: #858A9D;
+    text-align: left;
+}
+
+.stadistic-grafic > svg {
+    width: 139px;
+    height: 139px;
 }
 
 .box-stadistic {
@@ -170,4 +190,12 @@
 
 .box-information p {
     font-size: 8px;
+}
+@media (max-width: 500px) {
+    .containerTop-User{
+        height: auto;
+    }
+    .containerTop-User > div {
+        display: none;
+    }
 }
