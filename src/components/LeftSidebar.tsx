@@ -1,8 +1,8 @@
-import './Sidebar.css'
+import './LeftSidebar.css'
 
-const Sidebar = () => {
+const LeftSidebar = () => {
   return (
-    <section className='leftSide'>
+    <section className='leftSidebar'>
         <div className='logoContainer'>
             <button className='logo'></button>
             <svg className="menuIcon" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
@@ -86,18 +86,10 @@ const Sidebar = () => {
                     </ul>
                     <i></i>
                 </div>
-            </div>  
-            {/* <button className='btn'>
-                Create New
-                <span>
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="3.5" stroke="currentColor">
-                        <path stroke-linecap="round" stroke-linejoin="round" d="M12 4.5v15m7.5-7.5h-15" />
-                    </svg>
-                </span>
-            </button> */}
+            </div>
         </div>
     </section>
   )
 }
 
-export default Sidebar
+export default LeftSidebar

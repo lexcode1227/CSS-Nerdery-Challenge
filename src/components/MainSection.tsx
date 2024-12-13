@@ -3,8 +3,8 @@ import './MainSection.css'
 const MainSection = () => {
   return (
     <section className='mainSection'>
-        <div className='search-container'>
-            <div className="search-container--icon">
+        <div className='searchContainer'>
+            <div className="searchContainer-icon">
                 <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
                     <path stroke="currentColor" stroke-linecap="round" stroke-width="2" d="m21 21-3.5-3.5M17 10a7 7 0 1 1-14 0 7 7 0 0 1 14 0Z"/>
                 </svg>
@@ -14,7 +14,7 @@ const MainSection = () => {
         <div className='recentlyUsedContainer cardContainer'>
             <div className='cardBox-title'>
                 <h3 className='title-h3'>Recently Used</h3>
-                <div className='box-icons'>
+                <div className='boxIcons'>
                     <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
                         <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m15 19-7-7 7-7"/>
                     </svg>
@@ -23,11 +23,11 @@ const MainSection = () => {
                     </svg>
                 </div>
             </div>
-            <div className='cardBox-container'>
+            <div className='cardBoxContainer'>
                 <article className='card'>
-                    <div className='card-icons'>
-                        <div className='card-icons-square shadow'></div>
-                        <div className='card-icons-circles'>
+                    <div className='cardIcons'>
+                        <div className='cardIcons-square shadow'></div>
+                        <div className='cardIcons-circles'>
                             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
                                 <circle cx="12" cy="12" r="12" stroke='#BEC0C8' fill='white'/>
                             </svg>
@@ -45,9 +45,9 @@ const MainSection = () => {
                     </div>
                 </article>
                 <article className='card'>
-                    <div className='card-icons'>
-                        <div className='card-icons-square shadow'></div>
-                        <div className='card-icons-circles'>
+                    <div className='cardIcons'>
+                        <div className='cardIcons-square shadow'></div>
+                        <div className='cardIcons-circles'>
                             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
                                 <circle cx="12" cy="12" r="12" stroke='#BEC0C8' fill='white'/>
                             </svg>
@@ -65,9 +65,9 @@ const MainSection = () => {
                     </div>
                 </article>
                 <article className='card'>
-                    <div className='card-icons'>
-                        <div className='card-icons-square shadow'></div>
-                        <div className='card-icons-circles'>
+                    <div className='cardIcons'>
+                        <div className='cardIcons-square shadow'></div>
+                        <div className='cardIcons-circles'>
                             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
                                 <circle cx="12" cy="12" r="12" stroke='#BEC0C8' fill='white'/>
                             </svg>
@@ -164,11 +164,11 @@ const MainSection = () => {
                 <h3 className='title-h3'>Share with me</h3>
                 <p>View All</p>
             </div>
-            <div className='cardBox-container'>
+            <div className='cardBoxContainer'>
                 <article className='card card-small'>
-                    <div className='card-icons'>
-                        <div className='card-icons-square'></div>
-                        <div className='card-icons-circles'>
+                    <div className='cardIcons'>
+                        <div className='cardIcons-square'></div>
+                        <div className='cardIcons-circles'>
                             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
                                 <circle cx="12" cy="12" r="12" stroke='#4AC29D' fill='white'/>
                             </svg>
@@ -183,9 +183,9 @@ const MainSection = () => {
                     </div>
                 </article>
                 <article className='card card-small'>
-                    <div className='card-icons'>
-                        <div className='card-icons-square'></div>
-                        <div className='card-icons-circles'>
+                    <div className='cardIcons'>
+                        <div className='cardIcons-square'></div>
+                        <div className='cardIcons-circles'>
                             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
                                 <circle cx="12" cy="12" r="12" stroke='#4AC29D' fill='white'/>
                             </svg>
@@ -203,9 +203,9 @@ const MainSection = () => {
                     </div>
                 </article>
                 <article className='card card-small'>
-                    <div className='card-icons'>
-                        <div className='card-icons-square'></div>
-                        <div className='card-icons-circles'>
+                    <div className='cardIcons'>
+                        <div className='cardIcons-square'></div>
+                        <div className='cardIcons-circles'>
                             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
                                 <circle cx="12" cy="12" r="12" stroke='#4AC29D' fill='white'/>
                             </svg>

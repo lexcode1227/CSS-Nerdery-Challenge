@@ -1,4 +1,4 @@
-.graficSection {
+.rightSidebar {
     width: 100%;
     min-width: 252px;
     height: 100%;
@@ -8,7 +8,6 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    /* gap: 24px; */
 }
 
 .containerTop-User {
@@ -25,23 +24,23 @@
     width: 100%;
 }
 
-.box-icons {
+.boxIcons {
     display: flex;
     gap: 8px;
 }
 
-.box-user {
+.boxUser {
     display: flex;
     align-items: center;
     gap: 8px;
     font-size: 12px;
 }
 
-.box-user > svg {
+.boxUser > svg {
     color: #343951;
 }
 
-.container-stadistics {
+.stadisticsContainer {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -50,56 +49,56 @@
     margin-top: 17px;
 }
 
-.container-stadistics > h3 {
+.stadisticsContainer > h3 {
     width: 100%;
     text-align: left;
     font-size: 20px;
 }
 
-.subContainer-stadistic {
+.stadisticSubContainer {
     display: flex;
     flex-direction: column;
     gap: 20px;
 }
 
-.subContainer-stadistic > p {
+.stadisticSubContainer > p {
     color: #858A9D;
     font-size: 8px;
 }
 
-.stadistic-grafic {
+.chart {
     width: 139px;
     height: 139px;
     position: relative;
 }
-.stadistic-grafic--info {
+.chart--info {
     position: absolute;
     top: 38px;
     left: 52px;
 }
-.stadistic-grafic--info > h3 {
+.chart--info > h3 {
     font-size: 24px;
     color: #343951;
     text-align: left;
 }
-.stadistic-grafic--info > p {
+.chart--info > p {
     font-size: 14px;
     color: #858A9D;
     text-align: left;
 }
 
-.stadistic-grafic > svg {
+.chart > svg {
     width: 139px;
     height: 139px;
 }
 
-.box-stadistic {
+.stadisticBox {
     width: 100%;
     display: flex;
     flex-direction: column;
 }
 
-.card-stadistic {
+.stadisticCard {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -109,46 +108,46 @@
     border-bottom: 1px solid #E0E7F1;
 }
 
-.card-stadistic:last-child {
+.stadisticCard:last-child {
     border-bottom: none;
 }
 
-.card-stadistic-square {
+.stadisticCard-square {
     width: 28px;
     height: 28px;
     border-radius: 8px;
 }
 
-.card-stadistic:first-child > .card-stadistic-square {
+.stadisticCard:first-child > .stadisticCard-square {
     background-color: #FF9F00;
 }
 
-.card-stadistic:nth-child(2) > .card-stadistic-square {
+.stadisticCard:nth-child(2) > .stadisticCard-square {
     background-color: #689FF8;
 }
 
-.card-stadistic:nth-child(3) > .card-stadistic-square {
+.stadisticCard:nth-child(3) > .stadisticCard-square {
     background-color: #4AC29D;
 }
 
-.card-stadistic:last-child > .card-stadistic-square {
+.stadisticCard:last-child > .stadisticCard-square {
     background-color: #BCBECA;
 }
 
-.card-stadistic-container {
+.stadisticCard-container {
     padding: 10px 7px;
 }
 
-.card-stadistic-container h4 {
+.stadisticCard-container h4 {
     font-size: 10px;
     font-weight: 400;
 }
 
-.card-stadistic-container p {
+.stadisticCard-container p {
     font-size: 8px;
 }
 
-.card-stadistic > p {
+.stadisticCard > p {
     font-size: 8px;
     font-weight: 500;
     padding: 4.5px 14px;
@@ -157,7 +156,7 @@
     background-color: white;
 }
 
-.container-upgrade {
+.containerUpgrade {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -169,26 +168,26 @@
     height: 202px;
 }
 
-.container-upgrade > .btn {
+.containerUpgrade > .btn {
     font-weight: 600;
 }
 
-.box-gradient {
+.gradientBox {
     background: linear-gradient(to left, #689EF8, #FF6860, #FF9F00);
     width: 119px;
     height: 73px;
     border-radius: 11px;
 }
-.box-information {
+.informationBox {
     margin: 23px 0 11px 0;
 }
 
-.box-information h4 {
+.informationBox h4 {
     font-size: 12px;
     margin-bottom: 5px;
 }
 
-.box-information p {
+.informationBox p {
     font-size: 8px;
 }
 @media (max-width: 500px) {

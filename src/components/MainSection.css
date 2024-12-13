@@ -7,7 +7,7 @@
     background-color: #F5F6FC;
 }
 
-.search-container {
+.searchContainer {
     padding-top: 25px;
     display: flex;
     width: 100%;
@@ -15,7 +15,7 @@
     position: relative;
 }
 
-.search-container--icon {
+.searchContainer-icon {
     position: absolute;
     top: 24px;
     bottom: 0;
@@ -71,7 +71,7 @@
     align-items: center;
 }
 
-.cardBox-container {
+.cardBoxContainer {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -89,12 +89,12 @@
     color: #343951;
 }
 
-.box-icons {
+.boxIcons {
     display: flex;
     gap: 8px;
     justify-content: right;
 }
-.box-icons > svg {
+.boxIcons > svg {
     color: #343951;
 }
 
@@ -110,7 +110,7 @@
     padding: 16px 14px;
 }
 
-.card-icons {
+.cardIcons {
     display: flex;
     justify-content: space-between;
     width: 100%;
@@ -142,7 +142,7 @@
     padding-right: 24px;
 }
 
-.card-small > .card-icons {
+.card-small > .cardIcons {
     gap: 2px;
 }
 
@@ -207,7 +207,7 @@
     background-color: #FF9F00;
 }
 
-.card-icons > .card-icons-square {
+.cardIcons > .cardIcons-square {
     width: 30px;
     height: 26px;
     border-radius: 0;
@@ -219,7 +219,7 @@
     box-shadow: -5px 5px 0px 0px rgba(255, 217, 153, 1);
 }
 
-.card-icons-circles > svg {
+.cardIcons-circles > svg {
     width: 16px;
     height: 16px;
     padding: 1px;
@@ -230,7 +230,7 @@
         min-width: 100%;
         height: auto;
     }
-    .cardBox-container{
+    .cardBoxContainer{
         flex-direction: column;
         gap: 20px;
     }
