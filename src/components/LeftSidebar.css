@@ -191,7 +191,7 @@ svg {
 }
 
 @media (max-width: 500px) {
-    .leftSide {
+    .leftSidebar {
         height: auto;
         grid-template-rows: 1fr;
         max-width: 100%;
