@@ -38,7 +38,7 @@
 }
 
 .search-container--icon > svg {
-    color: black;
+    color: #343951;
 }
 
 .cardContainer {
@@ -90,7 +90,7 @@
     font-size: 12px;
 }
 .container div div svg {
-    color: black;
+    color: #343951;
 }
 
 .box-icons {
@@ -99,7 +99,7 @@
     justify-content: right;
 }
 .box-icons > svg {
-    color: black;
+    color: #343951;
 }
 
 .card {
