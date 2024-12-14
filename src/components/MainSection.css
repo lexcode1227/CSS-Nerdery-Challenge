@@ -49,12 +49,12 @@
 }
 
 .recentFilesContainer {
-    padding-top: 38px;
+    padding-top: 33px;
     gap: 8px;
 }
 
 .shareContainer {
-    padding-top: 38px;
+    padding-top: 33px;
     gap: 16px;
 }
 
@@ -133,7 +133,7 @@
 
 .card-small {
     width: 157px;
-    height: 79px;
+    height: 100px;
     gap: 6px;
     padding-right: 36px;
 }
@@ -230,6 +230,9 @@
         min-width: 100%;
         height: auto;
     }
+    .searchContainer{
+        min-width: 100%;
+    }
     .cardBoxContainer{
         flex-direction: column;
         gap: 20px;
@@ -240,7 +243,7 @@
     }
     .card-small {
        width: 157px;
-       height: 80px;
+       height: 100px;
     }
     .shareContainer{
         padding-bottom: 20px;
